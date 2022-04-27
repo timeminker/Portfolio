@@ -14,7 +14,7 @@ const changeFonts = () => {
 
   $('.font').remove()
   $('head').append($font)
-  $('.container').css("font-family", "\'Ms. Madi\'")
+  $('.container').css("font-family", "\'Ms. Madi\'", "cursive")
 }
 
 
@@ -22,7 +22,7 @@ const changeFonts = () => {
 
 
 
-(() => {
-  $('#bio-pic').on('click', bioPage)
+$(() => {
+  $('#bio-pic').hover(bioPage)
   $('.extrude').on('click', changeFonts)
 })
