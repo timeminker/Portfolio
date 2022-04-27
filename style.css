@@ -36,6 +36,14 @@ a:link {
   text-decoration: none;
   color: white;
 }
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+  transition: all 0.3s ease-out;
+  text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px;
+}
 .links {
   display: flex;
   flex-direction: row;
