@@ -1,7 +1,7 @@
 const bioPage = () => {
-  const $audio = $('<audio>').attr('src', './media/Cat-sound-meow.mp3').attr('id', 'cat').attr('type', 'audio/mpeg')
-
-  $('body').append($audio)
+  // const $audio = $('<audio>').attr('src', './media/Cat-sound-meow.mp3').attr('id', 'cat').attr('type', 'audio/mpeg')
+  console.log('meow');
+  // $('body').append($audio)
   $('audio#cat')[0].play();
   // setTimeout(function() {
   //   $('#audio-goes-here').empty()
