@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  font-family: 'Questrial', sans-serif;
+  background: orange;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.extrude {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px;
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin: 5px 0 0 5px;
+}
+.extrude:hover {
+  color: #FFF;
+  text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px, #58E 7px 7px, #58E 8px 8px;
+  /* left: 6px; */
+  /* top: 6px; */
+}
+ul {
+  background: #58E;
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  padding: 16px 0 16px 0;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.main {
+  flex: 1;
+}
+#bio-pic {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  flex: 0 1 30%;
+  background-color: #58E;
+}
+.project-image {
+  flex: auto;
+  align-self: center;
+  padding: 10px;
+  width: 90%;
+  height: auto;
+}
