@@ -40,9 +40,9 @@ a:visited {
   color: white;
 }
 a:hover {
-  color: white;
+  color: orange;
   transition: all 0.3s ease-out;
-  text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px;
+  text-shadow: #FFF 1px 1px, #FFF 2px 2px, #FFF 3px 3px, #FFF 4px 4px, #FFF 5px 5px;
 }
 .links {
   display: flex;
@@ -85,11 +85,14 @@ li {
 .carousel-container {
   width: 70%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+}
+.carousel-images {
+  flex-direction: column;
 }
 .carousel-images img {
   display: none;
-  width: 70%;
+  width: 100%;
 }
 .carousel-images img:first-of-type {
   display: block;
@@ -108,4 +111,15 @@ li {
 	background: #fa8d8e;
 	box-shadow: 1px 1px #f2cd99;
 	color: white;
+}
+#greeting {
+  text-align: center;
+  color: white;
+  background: #58e;
+}
+h1 [lang=ja], h1:hover span {
+  display: none;
+}
+li:hover [lang=ja] {
+  display: inline;
 }
