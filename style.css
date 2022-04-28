@@ -161,5 +161,11 @@ li:hover [lang=ja] {
   padding: 1em;
 }
 #email-button {
-  
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
