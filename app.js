@@ -52,9 +52,9 @@ const changeFonts = () => {
   }
 }
 
-let currentImgIndex = 0
-
-let numOfImages = $('.carousel-images').children().length-1
+// let currentImgIndex = 0
+//
+// let numOfImages = $('.carousel-images').children().length-1
 
 
 $(() => {

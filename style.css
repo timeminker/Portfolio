@@ -116,10 +116,22 @@ li {
   text-align: center;
   color: white;
   background: #58e;
+  font-size: 24pt;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 h1 [lang=ja], h1:hover span {
   display: none;
 }
 li:hover [lang=ja] {
   display: inline;
+}
+.main img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px
 }
