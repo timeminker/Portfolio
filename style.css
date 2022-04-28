@@ -135,3 +135,16 @@ li:hover [lang=ja] {
   margin-right: auto;
   margin-top: 32px
 }
+.home-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.home-card {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 30%;
+  background-color: #58E;
+  font-size: 18pt;
+}
