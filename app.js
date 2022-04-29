@@ -8,6 +8,25 @@ const bioPage = () => {
   // }, 4000);
 }
 
+const projectModal = () => {
+  const $div = $('<div>').attr('id', 'modal').append($('<h1>').text('Coming Soon!').css('font-size', '24pt')).append($('<button>').attr('id', 'modal-button').text('Close'))
+  $('.modal-here').append($div)
+  $div.css('z-index', '1')
+  $div.css('top', '50%')
+  $div.css('left', '41%')
+  $div.css('position', 'fixed')
+  $div.css('text-align', 'center')
+  $div.css('background', '#58E')
+  $div.css('width', '500px')
+  $div.css('max-width', '100%')
+  $div.css('height', '400px')
+  $div.css('max-height', '100%')
+}
+
+const closeModal = () => {
+  $('#modal').remove()
+}
+
 const fonts = [
   {
     url: 'https://fonts.googleapis.com/css2?family=Questrial&display=swap',
@@ -62,6 +81,8 @@ $(() => {
   let currentImgIndex = 0
   let numOfImages = $('.carousel-images').children().length-1
 
+  $('.modal-here').on('click', '#modal-button', closeModal)
+  $('.project-image').on('click', projectModal)
   $('#bio-pic').hover(bioPage)
   $('.extrude').on('click', changeFonts)
   $('.next').on('click', () => {
