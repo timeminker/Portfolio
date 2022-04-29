@@ -170,3 +170,17 @@ li:hover [lang=ja] {
   flex-direction: column;
   align-items: center;
 }
+button {
+  background-color: orange;
+  color: white;
+  transition-duration: 0.4s;
+  font-size: 16pt;
+  border-color: orange;
+  border-radius: 12px;
+  padding: 10px 26px;
+  font-family: 'Questrial', sans-serif;
+}
+button:hover {
+  background-color: #58E;
+  color: white;
+}

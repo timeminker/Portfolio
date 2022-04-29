@@ -45,6 +45,7 @@ const changeFonts = () => {
   $('.font').remove()
   $('head').append($font)
   $('.container').css("font-family", fonts[fontChoice].fontFamily)
+  $('button').css("font-family", fonts[fontChoice].fontFamily)
   if (fontChoice < fonts.length-1) {
     fontChoice++
   } else {
