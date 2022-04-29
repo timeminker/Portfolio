@@ -1,9 +1,9 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family: 'Questrial', sans-serif;
 }
 .container {
-  font-family: 'Questrial', sans-serif;
   background: orange;
   display: flex;
   flex-direction: column;
@@ -124,12 +124,6 @@ li {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-}
-h1 [lang=ja], h1:hover span {
-  display: none;
-}
-li:hover [lang=ja] {
-  display: inline;
 }
 .main img {
   display: block;
