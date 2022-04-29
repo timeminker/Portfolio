@@ -12,11 +12,9 @@ html, body {
 .extrude {
   color: #FFF;
   font-size: 48px;
-  font-weight: bold;
   text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px;
-  position: relative;
   transition: all 0.4s ease-out;
-  margin: 5px 0 0 5px;
+  margin: 10px 0 0 10px;
 }
 .extrude:hover {
   color: #FFF;
@@ -177,4 +175,32 @@ button {
 button:hover {
   background-color: #58E;
   color: white;
+}
+.resume-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3.5em;
+}
+.resume-card {
+  flex: 0 1 50%;
+  background-color: #58E;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+}
+@media (max-width: 700px) {
+  .home-card {
+    min-width: 250px;
+  }
+  .home-cards {
+    row-gap: 3em;
+    column-gap: 3em;
+  }
+  #greeting {
+    padding: 1.5em;
+  }
+  .resume-card {
+    min-width: 300px;
+  }
 }
