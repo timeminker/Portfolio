@@ -10,21 +10,53 @@ const bioPage = () => {
 
 const projectModal = () => {
   const $div = $('<div>').attr('id', 'modal').append($('<h1>').text('Coming Soon!').css('font-size', '24pt')).append($('<button>').attr('id', 'modal-button').text('Close'))
-  $('.modal-here').append($div)
-  $div.css('z-index', '1')
+  const $blackout = $('<div>').attr('id', 'blackout')
+  $('.modal-here').append($div).append($blackout)
+  $div.css('z-index', '110')
   $div.css('top', '50%')
-  $div.css('left', '41%')
-  $div.css('position', 'fixed')
+  $div.css('left', '50%')
+  $div.css('position', 'fixed').css('margin-left', '-250px').css('margin-top', '-200px')
   $div.css('text-align', 'center')
-  $div.css('background', '#58E')
+  $div.css('background', '#58E').css('border-radius', '12px')
   $div.css('width', '500px')
   $div.css('max-width', '100%')
   $div.css('height', '400px')
   $div.css('max-height', '100%')
+  $blackout.css('z-index', '100').css('background', 'orange').css('opacity', '0.5').css('position', 'fixed').css('top', '0').css('left', '0').css('width', '100%').css('height', '100%')
 }
 
 const closeModal = () => {
-  $('#modal').remove()
+  $('.modal-here').empty()
+}
+
+const closeEmail = () => {
+  $('.email-here').empty()
+}
+
+const sendEmail = () => {
+  const $emailContainer = $('<div>').addClass('email-container').append($('<form>').attr('action', 'action_page.php').attr('method', 'post'))
+  const $name = $('<label>').attr('for', 'name').text('Name')
+  const $input = $('<input>').attr('type', 'text').attr('id', 'name').attr('name', 'fullname').attr('placeholder', 'Your Name')
+  const $message = $('<label>').attr('for', 'subject').text('Your Message')
+  const $textArea = $('<textarea>').attr('id', 'subject').attr('name', 'subject').attr('placeholder', 'Say something nice!').attr('style', 'height:200px')
+  const $submit = $('<input>').attr('type', 'submit').attr('value', 'Submit').attr('id', 'submit-message')
+  const $blackout = $('<div>').attr('id', 'blackout')
+
+  $('.email-here').append($emailContainer)
+  $emailContainer.append($name, $input, $message, $textArea, $submit)
+  $('.email-here').append($blackout)
+  $emailContainer.css('z-index', '110')
+  $emailContainer.css('top', '50%')
+  $emailContainer.css('left', '50%').css('display', 'flex').css('flex-direction', 'column')
+  $emailContainer.css('position', 'fixed').css('margin-left', '-250px').css('margin-top', '-200px')
+  $emailContainer.css('text-align', 'center')
+  $emailContainer.css('background', '#58E').css('border-radius', '12px')
+  $emailContainer.css('width', '500px')
+  $emailContainer.css('max-width', '100%')
+  $emailContainer.css('height', '400px')
+  $emailContainer.css('max-height', '100%')
+  $blackout.css('z-index', '100').css('background', 'orange').css('opacity', '0.5').css('position', 'fixed').css('top', '0').css('left', '0').css('width', '100%').css('height', '100%')
+
 }
 
 const fonts = [
@@ -81,6 +113,8 @@ $(() => {
   let currentImgIndex = 0
   let numOfImages = $('.carousel-images').children().length-1
 
+  $('.email-here').on('click', '#submit-message', closeEmail)
+  $('#email-button').on('click', sendEmail)
   $('.modal-here').on('click', '#modal-button', closeModal)
   $('.project-image').on('click', projectModal)
   $('#bio-pic').hover(bioPage)

@@ -69,10 +69,15 @@ li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 3.5em;
+  /* column-gap: 1em; */
+  row-gap: 3em;
 }
 .card {
   flex: 0 1 30%;
   background-color: #58E;
+  cursor: pointer;
+  min-width: 300px;
+
 }
 .project-image {
   flex: auto;
@@ -94,6 +99,7 @@ li {
 .carousel-images img {
   display: none;
   width: 100%;
+  border-radius: 12px;
 }
 .carousel-images img:first-of-type {
   display: block;
@@ -102,14 +108,16 @@ li {
 	align-self: center;
 	background: #f2cd99;
 	color: #888;
-	padding: 10px;
-	border-radius: 50%;
+	padding: 30px;
+  margin: 15px;
+	border-radius: 30%;
 	text-align: center;
-	box-shadow: 1px 1px #fa8d8e;
+  font-size: 40pt;
+	box-shadow: 1px 1px #58E;
 }
 .carousel-button:hover {
 	cursor: pointer;
-	background: #fa8d8e;
+	background: #58E;
 	box-shadow: 1px 1px #f2cd99;
 	color: white;
 }
