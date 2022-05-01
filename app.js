@@ -1,12 +1,13 @@
+// function to play sound when bio pic hovered over
+
 const bioPage = () => {
-  // const $audio = $('<audio>').attr('src', './media/Cat-sound-meow.mp3').attr('id', 'cat').attr('type', 'audio/mpeg')
   console.log('meow');
-  // $('body').append($audio)
+
   $('audio#cat')[0].play();
-  // setTimeout(function() {
-  //   $('#audio-goes-here').empty()
-  // }, 4000);
+
 }
+
+// function for modals on projects page
 
 const projectModal = () => {
   const $div = $('<div>').attr('id', 'modal').append($('<h1>').text('Coming Soon!').css('font-size', '24pt')).append($('<button>').attr('id', 'modal-button').text('Close'))
@@ -25,13 +26,19 @@ const projectModal = () => {
   $blackout.css('z-index', '100').css('background', 'orange').css('opacity', '0.5').css('position', 'fixed').css('top', '0').css('left', '0').css('width', '100%').css('height', '100%')
 }
 
+// function to close modal on "close" click
+
 const closeModal = () => {
   $('.modal-here').empty()
 }
 
+// function to close email
+
 const closeEmail = () => {
   $('.email-here').empty()
 }
+
+// function for email modal window
 
 const sendEmail = () => {
   const $emailContainer = $('<div>').addClass('email-container').append($('<form>').attr('action', 'action_page.php').attr('method', 'post'))
@@ -56,8 +63,9 @@ const sendEmail = () => {
   $emailContainer.css('height', '400px')
   $emailContainer.css('max-height', '100%')
   $blackout.css('z-index', '100').css('background', 'orange').css('opacity', '0.5').css('position', 'fixed').css('top', '0').css('left', '0').css('width', '100%').css('height', '100%')
-
 }
+
+// array for font options
 
 const fonts = [
   {
@@ -86,6 +94,8 @@ const fonts = [
   }
 ]
 
+// function to change page fonts when name has been clicked on
+
 let fontChoice = 0
 
 const changeFonts = () => {
@@ -104,10 +114,7 @@ const changeFonts = () => {
   }
 }
 
-// let currentImgIndex = 0
-//
-// let numOfImages = $('.carousel-images').children().length-1
-
+// window loader for listeners
 
 $(() => {
   let currentImgIndex = 0

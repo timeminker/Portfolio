@@ -33,6 +33,7 @@ ul {
 a:link {
   text-decoration: none;
   color: white;
+  font-size: 14pt;
 }
 a:visited {
   color: white;
@@ -77,6 +78,7 @@ li {
   background-color: #58E;
   cursor: pointer;
   min-width: 300px;
+  font-size: 18pt;
 
 }
 .project-image {
