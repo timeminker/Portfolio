@@ -89,7 +89,7 @@ li {
   height: auto;
 }
 .carousel-container {
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -112,9 +112,9 @@ li {
 	color: #888;
 	padding: 30px;
   margin: 15px;
-	border-radius: 30%;
+	border-radius: 25%;
 	text-align: center;
-  font-size: 40pt;
+  font-size: 30pt;
 	box-shadow: 1px 1px #58E;
 }
 .carousel-button:hover {
